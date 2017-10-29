@@ -8,7 +8,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/.boto
+~Msle0~/\<DIR_WORK_1\>
 
 # Last Substitute Search Pattern:
 ~MSle0&^# 
@@ -17,16 +17,59 @@
 $
 
 # Command Line History (newest to oldest):
-:q
-:ae
-:wa
-:w
-:noh
 :wq
+:q
+:e ~/.vimrc
+:e ~
+:tabe ~
+:w
+:qa
+:mksession! ~/vimsession.vim
+:!mksession ~/vimsession.vim
+:mksession ~/vimsession.vim
+:cd ../prb-endpoints/
+:wq!
+:Wq
+:mksession ~/vim.vim
+:make ~/vim.vim
+:w!
+:W
+:11
+:q!
+:e r.sh
+:e r,sh
+:5
+:!pwd
+:w r.sh
+:! clear; bash Projects/BASH_REPO/cloudshell/i.sh
+:! clear bash Projects/BASH_REPO/cloudshell/i.sh
+:wqa
+:wa
+:e .profile
+:47
+:!clear;bash ./i.sh
+:46
+:42
+:14
+:2
+:26
+:!bash ./i.sh
+:33
+:! ./i.sh
+:! bash i.sh
+:23
+:57
+:x
+:e .gitignore
+:mksession .session.vim
+:cd ~/Projects/efor-components
+:e! .
+:e .
+:e
+:ae
+:noh
 :ewqwq
 :s
-:qa
-:wqa
 :!rm ../.sessions.vim
 :mksession! ../.session.vim
 :mksession ../.session.vim
@@ -47,7 +90,6 @@ $
 :!ls -la ..
 :!ls ..
 :!rm .session.vim
-:mksession .session.vim
 :source ~/.vimrc
 :tabe ~/.vimrc
 :e app/list.component.html
@@ -66,7 +108,6 @@ $
 :mksession L
 :cd ../../NG2-SUPERH/
 :!git reset HEAD --hard
-:q!
 :args
 :e ../../NG2-SUPERH/app/app.component.spec.ts
 :qa!
@@ -86,7 +127,6 @@ $
 :tabe app/
 :e i.sh
 :e .bashrc
-:e .profile
 :3
 :%s/^# //g
 :!bash test.sh
@@ -102,7 +142,6 @@ $
 :grep selectedHero */*.ts
 :grep selectedHero */*/*.ts
 :grep
-:47
 :45
 :tabe app/hero-detail.component.ts
 :e app/hero-detail.component.ts
@@ -115,8 +154,6 @@ $
 :38
 :9
 :e app/hero-detail.component.html
-:e
-:W
 :tabe app/dashboard.component.ts
 :%s/'/"/g
 :!mkdir api
@@ -131,7 +168,6 @@ $
 :e app/app.component.css
 :e app/
 :e! app/hero-detail.component.css
-:w!
 :e app/app/hero-detail.component.css
 :e! app/dashboard.component.css
 :sp app/[class*='col-'] {
@@ -200,7 +236,6 @@ $
 :e app/hero.ts
 :sp app/hero-detail.component.ts
 :104
-:14
 :set relativenumber!
 :e app/app.component.js
 :e ../PRB-NG2/app_pz/package.json
@@ -237,7 +272,6 @@ $
 :e app/components/
 :21
 :17
-:11
 :vsplit app/components/cart.component.ts
 :e app_pz/app/components/courses.component.ts
 :e app/components/courses.component.ts,ne
@@ -262,9 +296,7 @@ $
 :83
 :68
 :78
-:33
 :1
-:23
 :tabe conference.py
 :56
 :43
@@ -289,7 +321,6 @@ $
 :!rm hi.py
 :!rm static/hello.js
 :!dev_appserver.py .
-:e .
 :NERDTreeFind
 :NERDTree
 :e static/ind.html
@@ -317,7 +348,6 @@ $
 :bn
 :65
 :vsp .
-:wq!
 :ta
 :tabe#2
 :tabe·2
@@ -352,6 +382,15 @@ $
 :vsplit index.html
 
 # Search String History (newest to oldest):
+? \<DIR_WORK_1\>
+? \<userDir\>
+?/bash
+?/nvm use
+?/use
+?/nvm user
+?/PATH
+?/628679760616-3fit3t69ca4j0jjofgp5ksdp9o9avjgb.apps.googleusercontent.com
+? \<onSignIn\>
 ?/.boto
 ? \*
 ? \<onSelect\>
@@ -600,26 +639,29 @@ $
 # Input Line History (newest to oldest):
 
 # Registers:
-"0	CHAR	0
-	 -S .session.vim'
-""1	LINE	0
-	.boto.cache/
+"0	LINE	0
+	tmux split-window -l 6 -t 0 dev_appserver.py $DIR_WORK_1 --host 0.0.0.0 &
+"1	LINE	0
+	tmux split-window -l 6 dev_appserver.py $DIR_WORK_1 --host 0.0.0.0 &
+	tmux split-window -l 6 stylus -u nib -w $DIR_WORK_1/static/css/style.styl &
 "2	LINE	0
-	    ~/Projects/NG2-SUPERH/app/dashboard.component.ts\
-"3	LINE	0
-	    ~/Projects/NG2-SUPERH/app/app-routing.module.ts\
+	tmux split-window -l 5 bash &
+"3	BLOCK	4
+	-t 0 
+	-t 0 
 "4	LINE	0
-	    ~/Projects/NG2-SUPERH/app/app.component.ts\
+	sudo pkill -9 dev_appserver;
 "5	LINE	0
-	    ~/Projects/NG2-SUPERH/app/app.module.ts\
+	tmux split-window -l 6 stylus -u nib -w $DIR_WORK_1/static/css/style.styl &
 "6	LINE	0
-	 export ROUtES;
+	tmux split-window -l 6 dev_appserver.py $DIR_WORK_1 --host 0.0.0.0 &
 "7	LINE	0
-	     imports: [ RouterModule.forRoot(routes) ],
+	#tmux split-window -p 10 $DIR_WORK_1/static/css/style.styl &
 "8	LINE	0
-	    ../../NG2-SUPERH/app/app.module.ts
-"9	LINE	0
-	    # ~/Projects/NG2-SUPERH/app/app-routing.module.ts\
+	cd $DIR_WORK_1;
+"9	BLOCK	1
+	# 
+	# 
 "a	CHAR	0
 	yyp
 "l	CHAR	0
@@ -632,8 +674,8 @@ $
 "x	LINE	0
 	
 	- url: /fonts
-"-	CHAR	0
-	'
+""-	CHAR	0
+	tmux split-window -p 50 
 
 # global variables:
 
@@ -646,18 +688,72 @@ $
 'O  8  0  ~/Projects/PRB-NG2/app_pz/app/components/courses.component.ts
 'P  8  0  ~/Projects/PRB-NG2/app_pz/app/components/app.component.ts
 'U  13  6  ~/Projects/PRB-NG2/app_pz/app/components/cart.component.ts
-'0  5  4  ~/.gitignore
-'1  7  0  ~/.gitignore
-'2  1  0  ~/.boto
-'3  20  6  ~/.gitignore
-'4  19  0  ~/.gitignore
-'5  4  26  ~/Projects/ANG2-TEMPLATE/front/package.json
-'6  15  0  ~/Projects/PRB-NG2/app_pz/app/components/app.component.ts
-'7  1  0  ~/r.sh
-'8  20  50  ~/r.sh
-'9  1  0  ~/Projects/PRB-NG2/app_pz/.sessions.vim
+'0  44  9  ~/Projects/prb-endpoints/static/endpoints.js
+'1  4  0  ~/Projects/prb-endpoints/static/endpoints.js
+'2  12  34  ~/r.sh
+'3  29  0  ~/Projects/BASH_REPO/cloudshell/i.sh
+'4  7  20  ~/r.sh
+'5  3  0  ~/r.sh
+'6  1  0  ~/Projects/bs-config.js
+'7  1  7  ~/r.sh
+'8  44  0  ~/Projects/BASH_REPO/cloudshell/i.sh
+'9  45  0  ~/Projects/BASH_REPO/cloudshell/i.sh
 
 # Jumplist (newest first):
+-'  44  9  ~/Projects/prb-endpoints/static/endpoints.js
+-'  4  0  ~/Projects/prb-endpoints/static/endpoints.js
+-'  12  34  ~/r.sh
+-'  1  0  ~/r.sh
+-'  29  0  ~/Projects/BASH_REPO/cloudshell/i.sh
+-'  1  0  ~/Projects/BASH_REPO/cloudshell/i.sh
+-'  7  20  ~/r.sh
+-'  10  0  ~/r.sh
+-'  15  28  ~/r.sh
+-'  3  0  ~/r.sh
+-'  1  0  ~/r,sh
+-'  1  0  ~/r2.sh
+-'  4  0  ~/r.sh
+-'  17  38  ~/r.sh
+-'  18  0  ~/r.sh
+-'  1  0  ~/Projects/bs-config.js
+-'  44  0  ~/Projects/BASH_REPO/cloudshell/i.sh
+-'  28  0  ~/Projects/BASH_REPO/cloudshell/i.sh
+-'  45  0  ~/Projects/BASH_REPO/cloudshell/i.sh
+-'  121  41  ~/.bashrc
+-'  1  0  ~/.bashrc
+-'  4  0  ~/Projects/BASH_REPO/cloudshell/i.sh
+-'  51  0  ~/Projects/BASH_REPO/cloudshell/i.sh
+-'  1  0  ~/Projects/BASH_REPO/cloudshell/i
+-'  33  4  ~/i.sh
+-'  4  0  ~/i.sh
+-'  1  0  ~/i.sh
+-'  5  0  ~/Projects/google-login/NERD_tree_1
+-'  1  0  ~/Projects/google-login/NERD_tree_1
+-'  23  1  ~/Projects/google-login/loging.html
+-'  4  70  ~/Projects/google-login/loging.html
+-'  10  10  ~/Projects/google-login/loging.html
+-'  1  0  ~/Projects/google-login/loging.html
+-'  26  6  ~/Projects/google-login/loging.html
+-'  48  0  ~/i.sh
+-'  1  0  ~/Projects/XSS/.git/MERGE_MSG
+-'  56  0  ~/i.sh
+-'  47  37  ~/i.sh
+-'  39  34  ~/i.sh
+-'  1  0  ~/.profile
+-'  1  0  /etc/iproute2/rt_tables
+-'  2  13  ~/i.sh
+-'  3  0  ~/i.sh
+-'  55  0  ~/i.sh
+-'  57  2  ~/i.sh
+-'  26  0  ~/i.sh
+-'  12  0  ~/i.sh
+-'  50  31  ~/i.sh
+-'  1  0  ~/Projects/ANG2-TEMPLATE/.git/COMMIT_EDITMSG
+-'  15  0  ~/Projects/PRB-NG2/app_pz/app/components/app.component.ts
+-'  1  0  ~/Projects/PRB-NG2/app_pz/app/components/welcome.component.ts
+-'  15  0  ~/Projects/PRB-NG2/app_pz/app/components/login.component.ts
+-'  5  0  ~/Projects/PRB-NG2/app_pz/app/app.module.ts
+-'  1  0  ~/Projects/CPD200/index.yaml
 -'  5  4  ~/.gitignore
 -'  1  0  ~/.gitignore
 -'  7  0  ~/.gitignore
@@ -668,125 +764,514 @@ $
 -'  21  5  ~/.gitignore
 -'  4  26  ~/Projects/ANG2-TEMPLATE/front/package.json
 -'  1  0  ~/Projects/ANG2-TEMPLATE/front/package.json
--'  15  0  ~/Projects/PRB-NG2/app_pz/app/components/app.component.ts
--'  1  0  ~/Projects/PRB-NG2/app_pz/app/components/welcome.component.ts
--'  15  0  ~/Projects/PRB-NG2/app_pz/app/components/login.component.ts
--'  5  0  ~/Projects/PRB-NG2/app_pz/app/app.module.ts
--'  1  0  ~/r.sh
--'  20  50  ~/r.sh
 -'  1  0  ~/Projects/PRB-NG2/app_pz/.sessions.vim
--'  19  65  ~/r.sh
 -'  17  7  ~/Projects/ANG2-TEMPLATE/front/app/list.component.html
 -'  1  0  ~/Projects/ANG2-TEMPLATE/front/app/list.component.html
 -'  11  0  ~/Projects/ANG2-TEMPLATE/front/app/dashboard.component.html
 -'  1  0  ~/Projects/ANG2-TEMPLATE/front/app/dashboard.component.html
--'  37  20  ~/Projects/ANG2-TEMPLATE/front/app/app.component.html
--'  1  0  ~/Projects/ANG2-TEMPLATE/front/app/app.component.html
--'  2  0  ~/r.sh
--'  1  0  ~/Projects/NG2-SUPERH/app/app.module.ts
--'  33  1  ~/Projects/NG2-SUPERH/app/heroes.component.ts
--'  28  5  ~/Projects/NG2-SUPERH/app/heroes.component.ts
--'  50  0  ~/Projects/NG2-SUPERH/app/hero-detail.component.ts
--'  21  0  ~/Projects/NG2-SUPERH/app/hero-detail.component.ts
--'  28  2  ~/Projects/NG2-SUPERH/app/hero-detail.component.ts
--'  18  6  ~/Projects/NG2-SUPERH/app/dashboard.component.ts
--'  24  28  ~/Projects/NG2-SUPERH/app/dashboard.component.ts
--'  4  0  ~/Projects/NG2-SUPERH/app/app-routing.module.ts
--'  1  0  ~/Projects/NG2-SUPERH/app/app-routing.module.ts
--'  14  0  ~/.vimrc
--'  1  0  ~/.vimrc
--'  24  12  ~/Projects/ANG2-TEMPLATE/front/app/app.component.html
--'  21  19  ~/Projects/ANG2-TEMPLATE/front/app/app.component.html
--'  23  31  ~/Projects/ANG2-TEMPLATE/front/app/app.component.html
--'  1  0  ~/Projects/ANG2-TEMPLATE/.git/COMMIT_EDITMSG
--'  26  0  ~/r.sh
--'  21  26  ~/r.sh
--'  23  51  ~/r.sh
--'  12  0  ~/Projects/ANG2-TEMPLATE/front/NERD_tree_1
--'  28  2  ~/Projects/ANG2-TEMPLATE/front/NERD_tree_1
--'  1  0  ~/Projects/ANG2-TEMPLATE/front/NERD_tree_1
--'  18  0  ~/Projects/NG2-SUPERH/app/app.module.ts
--'  31  0  ~/Projects/ANG2-TEMPLATE/front/NERD_tree_1
--'  55  2  ~/Projects/ANG2-TEMPLATE/front/NERD_tree_1
--'  17  0  ~/Projects/NG2-SUPERH/app/app.module.ts
--'  22  3  ~/Projects/NG2-SUPERH/app/app.module.ts
--'  13  0  ~/Projects/ANG2-TEMPLATE/front/app/app.module.ts
--'  4  0  ~/Projects/NG2-SUPERH/app/dashboard.component.ts
--'  7  0  ~/Projects/NG2-SUPERH/app/app.module.ts
--'  1  0  ~/Projects/ANG2-TEMPLATE/front/app/app.module.ts
--'  1  0  ~/i.sh
--'  1  0  ~/2
--'  3  0  ~/i.sh
--'  3  0  ~/Projects/ANG2-TEMPLATE/front/app/app.module.ts
--'  1  0  ../app/app.module.ts
+-'  1  0  ~/Projects/BASH_REPO/.git/COMMIT_EDITMSG
+-'  1  0  ~/Projects/GAE-TEMPLATE/app.yaml
+-'  3  0  ~/Projects/GAE-TEMPLATE/app.yaml
+-'  6  0  ~/Projects/GAE-TEMPLATE/static/js/analyticsConfig.js
+-'  1  0  ~/Projects/GAE-TEMPLATE/static/js/analyticsConfig.js
+-'  58  0  ~/Projects/GAE-TEMPLATE/NERD_tree_1
+-'  73  2  ~/Projects/GAE-TEMPLATE/NERD_tree_1
+-'  1  0  ~/Projects/GAE-TEMPLATE/NERD_tree_1
 -'  1  0  ~/r,sh
--'  22  8  ~/r,sh
--'  1  0  ~/Projects/NG2-SUPERH/app/app.component.spec.ts
--'  1  0  ~/Projects/ANG2-TEMPLATE/front/static/css/stylus/structure.styl
--'  20  0  ~/r,sh
--'  222  0  ~/Projects/ANG2-TEMPLATE/front/NERD_tree_1
--'  261  2  ~/Projects/ANG2-TEMPLATE/front/NERD_tree_1
--'  1  1  ~/Projects/ANG2-TEMPLATE/front/index.html
--'  39  0  ~/Projects/bash/popul.sh
--'  23  0  ~/Projects/bash/popul.sh
--'  29  6  ~/Projects/bash/popul.sh
--'  8  0  ~/Projects/bash/popul.sh
--'  20  21  ~/Projects/bash/popul.sh
--'  7  6  ~/Projects/bash/popul.sh
--'  19  20  ~/Projects/bash/popul.sh
--'  1  0  ~/Projects/bash/popul.sh
--'  12  0  ~/i.sh
--'  2  1  ~/Projects/bash/popul
--'  1  0  ~/Projects/bash/popul
--'  1  0  ~/Projects/L
--'  1  5  ~/Projects/l
--'  2  0  ~/Projects/l
--'  1  0  ~/Projects/ang2/CHANGELOG.md
--'  1  7  ~/Projects/CH.md
--'  2  0  ~/Projects/CH.md
--'  10  0  ~/.vimrc
--'  11  0  ~/.vimrc
--'  7  0  ~/run.sh
--'  5  0  ~/i.sh
--'  7  0  ~/i.sh
--'  1  0  ~/i
--'  32  14  ~/i.sh
--'  1  0  ~/run.sh
--'  1  0  /run.sh
--'  6  20  ~/run.sh
--'  18  0  ~/run.sh
--'  15  0  ~/Projects/PRB-NG2/app_pz/app/components/app.component.ts
--'  1  0  ~/Projects/PRB-NG2/app_pz/app/components/welcome.component.ts
+-'  1  0  ~/r2.sh
+-'  11  0  ~/r.sh
+-'  16  38  ~/r.sh
+-'  14  0  ~/r.sh
+-'  1  0  ~/Projects/bs-config.js
+-'  13  0  ~/r.sh
+-'  121  41  ~/.bashrc
+-'  1  0  ~/.bashrc
+-'  1  0  ~/Projects/BASH_REPO/cloudshell/i
+-'  33  4  ~/i.sh
+-'  4  0  ~/i.sh
+-'  1  0  ~/i.sh
+-'  7  0  ~/Projects/prb-endpoints/static/endpoints.js
+-'  6  0  ~/Projects/prb-endpoints/static/endpoints.js
+-'  29  0  ~/Projects/BASH_REPO/cloudshell/i.sh
+-'  1  0  ~/Projects/BASH_REPO/cloudshell/i.sh
+-'  15  0  ~/r.sh
 
 # History of marks within files (newest to oldest):
 
-> ~/.gitignore
-	"	5	4
-	^	2	5
-	.	2	4
-	+	3	13
-	+	4	12
-	+	5	12
-	+	5	8
-	+	6	8
-	+	7	6
-	+	15	7
-	+	15	0
-	+	16	13
-	+	16	0
-	+	15	4
-	+	16	0
-	+	17	7
-	+	19	13
-	+	20	6
-	+	5	0
-	+	2	4
+> ~/Projects/prb-endpoints/static/endpoints.js
+	"	44	9
+	^	53	10
+	.	53	9
+	+	53	9
 
-> ~/.boto
+> ~/Projects/prb-endpoints/~
 	"	1	0
 
-> ~/Projects/ANG2-TEMPLATE/front/package.json
-	"	4	26
+> ~/Projects/prb-endpoints/NERD_tree_1
+	"	4	0
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> ~/.vimrc
+	"	24	0
+	^	5	16
+	.	5	15
+	+	3	0
+	+	9	0
+	+	11	14
+	+	10	25
+	+	4	4
+	+	4	0
+	+	8	8
+	+	14	19
+	+	15	0
+	+	13	0
+	+	11	0
+	+	14	0
+	+	11	0
+	+	4	12
+	+	5	15
+
+> ~/r.sh
+	"	15	0
+	^	15	1
+	.	15	0
+	+	18	50
+	+	16	26
+	+	17	102
+	+	18	22
+	+	17	51
+	+	18	52
+	+	19	0
+	+	18	41
+	+	18	0
+	+	17	40
+	+	17	40
+	+	7	1
+	+	7	1
+	+	7	1
+	+	8	0
+	+	7	34
+	+	16	13
+	+	18	32
+	+	18	30
+	+	19	0
+	+	18	24
+	+	17	72
+	+	18	21
+	+	18	0
+	+	12	0
+	+	12	0
+	+	18	0
+	+	12	97
+	+	12	0
+	+	10	0
+	+	18	46
+	+	7	0
+	+	2	0
+	+	3	0
+	+	6	9
+	+	5	0
+	+	4	33
+	+	2	0
+	+	12	103
+	+	12	34
+	+	6	11
+	+	12	144
+	+	12	21
+	+	12	98
+	+	12	34
+	+	12	93
+	+	12	94
+	+	12	52
+	+	12	76
+	+	12	23
+	+	12	0
+	+	12	76
+	+	12	73
+	+	12	0
+	+	12	0
+	+	12	21
+	+	12	0
+	+	11	12
+	+	12	19
+	+	12	19
+	+	12	21
+	+	12	21
+	+	12	21
+	+	12	21
+	+	12	21
+	+	12	0
+	+	12	0
+	+	12	0
+	+	9	4
+	+	10	4
+	+	10	0
+	+	12	27
+	+	12	27
+	+	12	30
+	+	12	30
+	+	12	0
+	+	12	17
+	+	12	22
+	+	12	23
+	+	12	0
+	+	12	0
+	+	12	0
+	+	12	0
+	+	12	0
+	+	16	27
+	+	10	0
+	+	12	0
+	+	13	0
+	+	12	37
+	+	15	73
+	+	13	19
+	+	15	19
+	+	13	22
+	+	15	22
+	+	13	0
+	+	11	60
+	+	12	40
+	+	6	34
+	+	14	27
+	+	15	0
+
+> ~/Projects/GAE-TEMPLATE/app.yaml
+	"	1	0
+
+> ~/Projects/BASH_REPO/cloudshell/i.sh
+	"	29	0
+	.	31	0
+	+	1	31
+	+	1	31
+	+	1	31
+	+	1	17
+	+	1	34
+	+	1	12
+	+	1	31
+	+	1	31
+	+	1	31
+	+	1	132
+	+	1	32
+	+	1	31
+	+	1	31
+	+	1	31
+	+	1	31
+	+	1	31
+	+	45	0
+	+	1	31
+	+	1	33
+	+	1	34
+	+	45	0
+	+	1	30
+	+	1	19
+	+	1	14
+	+	1	12
+	+	1	12
+	+	50	0
+	+	51	0
+	+	3	22
+	+	3	22
+	+	1	12
+	+	2	14
+	+	3	22
+	+	45	2
+	+	45	0
+	+	45	0
+	+	45	0
+	+	45	2
+	+	45	1
+	+	45	0
+	+	45	1
+	+	45	0
+	+	45	0
+	+	45	0
+	+	45	0
+	+	45	0
+	+	45	0
+	+	45	3
+	+	45	3
+	+	45	0
+	+	45	0
+	+	45	0
+	+	45	0
+	+	45	0
+	+	45	0
+	+	45	30
+	+	45	0
+	+	45	0
+	+	45	0
+	+	45	7
+	+	45	0
+	+	45	0
+	+	45	17
+	+	45	0
+	+	45	0
+	+	45	0
+	+	45	18
+	+	45	0
+	+	45	0
+	+	45	14
+	+	45	0
+	+	45	48
+	+	45	11
+	+	45	9
+	+	45	0
+	+	45	11
+	+	45	15
+	+	45	88
+	+	45	0
+	+	45	14
+	+	45	109
+	+	45	0
+	+	45	0
+	+	45	0
+	+	45	0
+	+	45	9
+	+	45	0
+	+	45	0
+	+	45	28
+	+	45	36
+	+	45	0
+	+	45	3
+	+	45	0
+	+	45	0
+	+	6	0
+	+	28	114
+	+	28	0
+	+	27	0
+	+	30	0
+	+	31	0
+
+> ~/Projects/BASH_REPO/.git/COMMIT_EDITMSG
+	"	1	0
+
+> ~/Projects/GAE-TEMPLATE/NERD_tree_1
+	"	9	0
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> ~/Projects/GAE-TEMPLATE/static/js/analyticsConfig.js
+	"	6	0
+
+> ~/r2.sh
+	"	2	0
+
+> ~/r,sh
+	"	1	0
+	^	22	8
+	.	22	19
+	+	22	20
+	+	20	0
+	+	21	6
+	+	22	18
+	+	22	17
+	+	22	18
+	+	23	0
+	+	22	17
+	+	22	6
+	+	22	0
+	+	22	19
+
+> /usr/share/vim/vim74/doc/help.txt
+	"	9	0
+
+> ~/Projects/bs-config.js
+	"	1	0
+
+> ~/Projects/efor-components/mdl-skeleton-default/complements.styl
+	"	1197	3
+
+> ~/.bashrc
+	"	122	40
+	.	121	0
+	+	120	0
+	+	118	29
+	+	123	9
+	+	123	13
+	+	123	0
+	+	123	12
+	+	123	0
+	+	123	0
+	+	123	42
+	+	123	6
+	+	123	42
+	+	123	0
+	+	123	9
+	+	123	42
+	+	123	9
+	+	1	0
+	+	123	7
+	+	123	0
+	+	123	0
+	+	123	0
+	+	121	0
+
+> ~/.profile
+	"	26	17
+	^	26	18
+	.	26	17
+	+	24	49
+	+	27	0
+	+	27	7
+	+	25	0
+	+	27	0
+	+	26	17
+
+> ~/Projects/BASH_REPO/cloudshell/i
+	"	1	0
+
+> ~/Projects/BASH_REPO/cloudshell/NERD_tree_1
+	"	5	0
+	.	1	0
+	+	1	0
+
+> ~/i.sh
+	"	33	4
+	.	4	0
+	+	14	7
+	+	52	0
+	+	19	0
+	+	19	0
+	+	19	0
+	+	19	0
+	+	51	0
+	+	19	0
+	+	13	9
+	+	19	0
+	+	20	0
+	+	26	0
+	+	49	0
+	+	49	0
+	+	51	23
+	+	17	22
+	+	19	0
+	+	25	34
+	+	7	17
+	+	13	8
+	+	17	33
+	+	19	31
+	+	23	20
+	+	24	21
+	+	47	63
+	+	47	0
+	+	27	0
+	+	48	0
+	+	47	29
+	+	51	0
+	+	51	14
+	+	51	0
+	+	50	0
+	+	49	0
+	+	50	0
+	+	49	0
+	+	51	0
+	+	54	0
+	+	53	0
+	+	25	0
+	+	50	0
+	+	50	0
+	+	25	0
+	+	50	0
+	+	7	20
+	+	9	40
+	+	8	0
+	+	9	61
+	+	16	13
+	+	43	12
+	+	19	38
+	+	47	31
+	+	7	18
+	+	8	0
+	+	8	0
+	+	7	28
+	+	7	11
+	+	7	13
+	+	7	11
+	+	7	41
+	+	7	43
+	+	7	26
+	+	7	41
+	+	7	14
+	+	7	24
+	+	7	29
+	+	7	40
+	+	8	0
+	+	6	20
+	+	6	0
+	+	12	2
+	+	50	23
+	+	7	0
+	+	50	29
+	+	55	0
+	+	29	0
+	+	44	24
+	+	47	0
+	+	47	46
+	+	50	0
+	+	46	3
+	+	47	0
+	+	46	0
+	+	47	28
+	+	50	31
+	+	2	12
+	+	4	0
+	+	55	0
+	+	2	13
+	+	57	4
+	+	4	0
+	+	3	0
+	+	56	4
+	+	2	13
+	+	56	21
+	+	39	34
+	+	7	37
+	+	56	0
+	+	6	37
+	+	4	0
+
+> ~/Projects/google-login/NERD_tree_1
+	"	5	0
+	.	1	0
+	+	1	0
+
+> ~/Projects/google-login/loging.html
+	"	23	1
+	^	4	71
+	.	4	0
+	+	26	0
+	+	2	0
+	+	4	0
+
+> ~/NERD_tree_1
+	"	4	0
+	.	1	0
+	+	1	0
+
+> ~/Projects/XSS/.git/MERGE_MSG
+	"	1	0
+
+> /etc/iproute2/rt_tables
+	"	1	0
+
+> ~/Projects/ANG2-TEMPLATE/.git/COMMIT_EDITMSG
+	"	1	0
+
+> ~/Projects/efor-components/.gitignore
+	"	3	0
+	^	3	0
+	.	3	0
+	+	3	0
 
 > ~/Projects/PRB-NG2/app_pz/app/app.module.ts
 	"	5	0
@@ -895,8 +1380,119 @@ $
 > ~/Projects/PRB-NG2/app_pz/app/components/welcome.component.ts
 	"	1	0
 
+> ~/Projects/PRB-NG2/app_pz/NERD_tree_1
+	"	9	0
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> ~/Projects/PRB-NG2/app_pz/NERD_tree_2
+	"	5	0
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
 > ~/Projects/ANG2-TEMPLATE/front/app/app.component.html
-	"	39	20
+	"	92	0
 	^	38	84
 	.	38	83
 	+	7	16
@@ -944,8 +1540,71 @@ $
 	n	5	0
 	p	24	12
 
+> ~/Projects/ANG2-TEMPLATE/front/static/css/stylus/structure.styl
+	"	340	12
+	^	55	9
+	.	55	8
+	+	1	21
+	+	1	17
+	+	1	0
+	+	1	17
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	16
+	+	1	25
+	+	1	0
+	+	1	25
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	26
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	8
+	+	1	23
+	+	1	31
+	+	1	0
+	+	1	0
+	+	1	5
+	+	1	0
+	+	1	0
+	+	1	4
+	+	1	0
+	+	1	0
+	+	1	21
+	+	1	0
+	+	1	0
+	+	1	21
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	25
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	24
+	+	1	25
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	24
+	+	1	0
+	+	1	4
+	+	1	0
+	+	1	0
+	+	55	8
+	f	196	19
+
 > ~/Projects/ANG2-TEMPLATE/front/app/app.module.ts
-	"	25	18
+	"	26	0
 	^	10	9
 	.	24	6
 	+	1	16
@@ -993,7 +1652,7 @@ $
 	+	14	0
 
 > ~/Projects/ANG2-TEMPLATE/front/app/app-routing.module.ts
-	"	14	23
+	"	2	0
 	^	7	24
 	.	7	23
 	+	76	0
@@ -1087,7 +1746,7 @@ $
 	+	6	18
 
 > ~/Projects/ANG2-TEMPLATE/front/app/dashboard.component.html
-	"	11	0
+	"	19	2
 	^	20	6
 	.	3	0
 	+	1	12
@@ -1095,7 +1754,7 @@ $
 	+	3	0
 
 > ~/Projects/ANG2-TEMPLATE/front/app/list.component.ts
-	"	7	1
+	"	1	0
 	^	9	18
 	.	9	17
 	+	8	16
@@ -1118,7 +1777,7 @@ $
 	+	9	17
 
 > ~/Projects/ANG2-TEMPLATE/front/app/list.component.html
-	"	17	7
+	"	18	64
 	^	7	24
 	.	13	0
 	+	1	7
@@ -1138,6 +1797,37 @@ $
 	+	13	13
 	+	13	0
 
+> ~/Projects/CPD200/index.yaml
+	"	1	0
+
+> ~/.gitignore
+	"	5	4
+	^	2	5
+	.	2	4
+	+	3	13
+	+	4	12
+	+	5	12
+	+	5	8
+	+	6	8
+	+	7	6
+	+	15	7
+	+	15	0
+	+	16	13
+	+	16	0
+	+	15	4
+	+	16	0
+	+	17	7
+	+	19	13
+	+	20	6
+	+	5	0
+	+	2	4
+
+> ~/.boto
+	"	1	0
+
+> ~/Projects/ANG2-TEMPLATE/front/package.json
+	"	4	26
+
 > ~/Projects/ANG2-TEMPLATE/NERD_tree_1
 	"	5	0
 	.	1	0
@@ -1155,187 +1845,17 @@ $
 	+	1	0
 	+	1	0
 
-> ~/r.sh
-	"	18	0
-	^	17	80
-	.	20	80
-	+	17	74
-	+	17	90
-	+	17	71
-	+	20	0
-	+	20	64
-	+	17	74
-	+	18	0
-	+	21	0
-	+	18	2
-	+	18	24
-	+	20	64
-	+	20	64
-	+	20	68
-	+	20	71
-	+	20	71
-	+	16	0
-	+	19	0
-	+	17	20
-	+	20	23
-	+	17	16
-	+	20	16
-	+	20	69
-	+	20	70
-	+	20	64
-	+	20	68
-	+	19	0
-	+	18	3
-	+	19	26
-	+	18	15
-	+	20	115
-	+	20	89
-	+	20	25
-	+	17	69
-	+	17	90
-	+	20	116
-	+	17	72
-	+	18	0
-	+	17	72
-	+	18	0
-	+	17	83
-	+	17	48
-	+	19	29
-	+	20	48
-	+	20	67
-	+	21	0
-	+	20	80
-
-> ~/.vimrc
-	"	24	0
-	^	14	1
-	.	11	0
-	+	3	0
-	+	9	0
-	+	11	14
-	+	10	25
-	+	4	4
-	+	4	0
-	+	8	8
-	+	14	19
-	+	15	0
-	+	13	0
-	+	11	0
-	+	14	0
-	+	11	0
-
 > ~/Projects/PRB-NG2/app_pz/.sessions.vim
 	"	1	0
 
 > ~/Projects/PRB-NG2/app_pz/app/main.js.map
 	"	1	0
 
-> ~/Projects/PRB-NG2/app_pz/NERD_tree_1
-	"	11	0
-	.	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-
 > ~/Projects/PRB-NG2/app_pz/app/app.module.js
 	"	2	0
 
 > ~/Projects/PRB-NG2/app_pz/app/main.ts
 	"	5	0
-
-> ~/Projects/PRB-NG2/app_pz/NERD_tree_2
-	"	10	0
-	.	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
 
 > ~/Projects/PRB-NG2/app_pz/NERD_tree_3
 	"	25	0
@@ -1886,69 +2406,6 @@ $
 	+	6	0
 	+	6	0
 
-> ~/Projects/ANG2-TEMPLATE/front/static/css/stylus/structure.styl
-	"	204	6
-	^	55	9
-	.	55	8
-	+	1	21
-	+	1	17
-	+	1	0
-	+	1	17
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	16
-	+	1	25
-	+	1	0
-	+	1	25
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	26
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	8
-	+	1	23
-	+	1	31
-	+	1	0
-	+	1	0
-	+	1	5
-	+	1	0
-	+	1	0
-	+	1	4
-	+	1	0
-	+	1	0
-	+	1	21
-	+	1	0
-	+	1	0
-	+	1	21
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	25
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	24
-	+	1	25
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	24
-	+	1	0
-	+	1	4
-	+	1	0
-	+	1	0
-	+	55	8
-	f	196	19
-
 > ~/Projects/ANG2-TEMPLATE/front/NERD_tree_1
 	"	48	0
 	.	1	0
@@ -2040,129 +2497,14 @@ $
 	+	1	0
 	+	1	0
 
-> ~/Projects/ANG2-TEMPLATE/.git/COMMIT_EDITMSG
-	"	1	0
-
 > ~/Projects/ANG2-TEMPLATE/front/app/app-routing.module.js
 	"	4	0
-
-> ~/i.sh
-	"	1	0
-	^	41	0
-	.	41	0
-	+	1	10
-	+	42	0
-	+	15	40
-	+	17	0
-	+	42	0
-	+	17	0
-	+	17	0
-	+	16	0
-	+	17	0
-	+	17	0
-	+	17	19
-	+	17	4
-	+	38	20
-	+	17	0
-	+	17	0
-	+	2	0
-	+	12	7
-	+	38	0
-	+	17	0
-	+	17	0
-	+	17	0
-	+	17	0
-	+	37	0
-	+	17	0
-	+	11	9
-	+	17	0
-	+	18	0
-	+	24	0
-	+	32	0
-	+	32	0
-	+	37	23
-	+	15	22
-	+	17	0
-	+	23	34
-	+	5	17
-	+	11	8
-	+	15	33
-	+	17	31
-	+	21	20
-	+	22	21
-	+	28	63
-	+	29	0
-	+	25	0
-	+	31	0
-	+	30	29
-	+	37	0
-	+	37	14
-	+	37	0
-	+	33	0
-	+	32	0
-	+	33	0
-	+	32	0
-	+	37	0
-	+	40	0
-	+	39	0
-	+	23	0
-	+	36	0
-	+	34	0
-	+	23	0
-	+	35	0
-	+	5	20
-	+	7	40
-	+	6	0
-	+	7	61
-	+	14	13
-	+	27	12
-	+	17	38
-	+	30	31
-	+	5	18
-	+	6	0
-	+	6	0
-	+	5	28
-	+	5	11
-	+	5	13
-	+	5	11
-	+	5	41
-	+	5	43
-	+	5	26
-	+	5	41
-	+	5	14
-	+	5	24
-	+	5	29
-	+	5	40
-	+	6	0
-	+	4	20
-	+	4	0
-	+	10	2
-	+	36	23
-	+	5	0
-	+	36	29
-	+	41	0
 
 > ~/2
 	"	1	0
 
 > ../app/app.module.ts
 	"	1	0
-
-> ~/r,sh
-	"	1	0
-	^	22	8
-	.	22	19
-	+	22	20
-	+	20	0
-	+	21	6
-	+	22	18
-	+	22	17
-	+	22	18
-	+	23	0
-	+	22	17
-	+	22	6
-	+	22	0
-	+	22	19
 
 > ~/Projects/NG2-SUPERH/app/app.component.spec.ts
 	"	1	0
@@ -2333,20 +2675,6 @@ $
 > /run.sh
 	"	1	0
 
-> ~/.bashrc
-	"	117	0
-	^	122	0
-	.	122	0
-	+	119	0
-	+	117	29
-	+	120	9
-	+	121	13
-	+	123	0
-	+	121	12
-	+	123	0
-	+	123	0
-	+	122	0
-
 > ~/index.html
 	"	1	0
 
@@ -2362,12 +2690,6 @@ $
 
 > ~/new-window
 	"	1	0
-
-> ~/.profile
-	"	24	0
-	.	25	0
-	+	24	49
-	+	25	0
 
 > ~/run
 	"	1	0
@@ -2475,285 +2797,3 @@ $
 	+	2	58
 	+	3	0
 	+	2	37
-
-> ~/Projects/NG2-SUPERH/package.json
-	"	6	0
-	.	9	0
-	+	9	0
-
-> ~/Projects/ang2/index.html
-	"	1	0
-
-> ~/Projects/NG2-SUPERH/app/hero.service.ts
-	"	62	4
-	^	58	8
-	.	58	7
-	+	8	5
-	+	1	13
-	+	8	12
-	+	17	20
-	+	5	0
-	+	7	0
-	+	6	36
-	+	5	29
-	+	17	21
-	+	64	0
-	+	17	19
-	+	64	0
-	+	17	20
-	+	18	14
-	+	6	14
-	+	18	15
-	+	17	19
-	+	64	0
-	+	17	1
-	+	18	0
-	+	18	0
-	+	18	0
-	+	18	0
-	+	18	0
-	+	17	1
-	+	17	2
-	+	18	0
-	+	17	0
-	+	17	30
-	+	23	0
-	+	18	33
-	+	23	0
-	+	18	36
-	+	18	10
-	+	18	3
-	+	18	3
-	+	23	0
-	+	18	52
-	+	18	0
-	+	18	0
-	+	29	0
-	+	64	21
-	+	64	16
-	+	64	16
-	+	64	33
-	+	64	0
-	+	64	0
-	+	30	0
-	+	17	0
-	+	17	52
-	+	17	13
-	+	17	19
-	+	17	0
-	+	18	38
-	+	18	50
-	+	18	0
-	+	18	4
-	+	29	6
-	+	29	0
-	+	4	0
-	+	4	36
-	+	6	2
-	+	17	22
-	+	18	21
-	+	18	33
-	+	18	0
-	+	18	0
-	+	18	0
-	+	18	0
-	+	18	0
-	+	18	14
-	+	18	19
-	+	18	0
-	+	20	0
-	+	8	0
-	+	11	68
-	+	12	0
-	+	44	0
-	+	37	35
-	+	39	5
-	+	37	0
-	+	38	15
-	+	38	15
-	+	38	29
-	+	38	0
-	+	40	0
-	+	39	3
-	+	40	10
-	+	53	0
-	+	47	0
-	+	49	0
-	+	48	4
-	+	49	7
-	+	50	7
-	+	63	0
-	+	56	0
-	+	57	18
-	+	58	2
-	+	59	0
-	+	58	7
-
-> ~/Projects/NG2-SUPERH/api/heroes.json
-	"	12	30
-	^	5	33
-	.	12	0
-	+	1	0
-	+	3	5
-	+	4	0
-	+	3	17
-	+	4	13
-	+	5	13
-	+	6	13
-	+	7	13
-	+	8	13
-	+	9	13
-	+	10	13
-	+	11	13
-	+	12	13
-	+	4	3
-	+	5	3
-	+	6	3
-	+	7	3
-	+	8	3
-	+	9	3
-	+	10	3
-	+	11	3
-	+	12	3
-	+	5	0
-	+	5	0
-	+	3	0
-	+	1	0
-	+	14	0
-	+	2	0
-	+	3	0
-	+	2	6
-	+	12	31
-	+	13	10
-	+	12	0
-
-> ~/Projects/NG2-SUPERH/app/heroes.component.css
-	"	54	0
-	.	55	0
-	+	1	0
-	+	3	0
-	+	1	0
-	+	54	0
-	+	49	0
-	+	55	0
-	+	55	0
-
-> ~/Projects/NG2-SUPERH/app/in-memory-data.service.ts
-	"	1	0
-	^	18	1
-	.	3	0
-	+	18	0
-	+	3	0
-
-> ~/Projects/NG2-SUPERH/systemjs.config.js
-	"	23	0
-
-> ~/Projects/NG2-SUPERH/tsconfig.json
-	"	3	17
-	^	3	21
-	.	3	0
-	+	3	17
-	+	9	19
-	+	3	0
-	+	3	0
-
-> ~/Projects/NG2-SUPERH/app/app.component.js
-	"	1	4
-
-> ~/Projects/NG2-SUPERH/NERD_tree_3
-	"	11	0
-	.	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-
-> ~/Projects/NG2-SUPERH/app/app.module.js
-	"	1	0
-
-> ~/Projects/NG2-SUPERH/app/dashboard.component.html
-	"	3	96
-	^	3	97
-	.	3	96
-	+	1	0
-	+	4	0
-	+	4	0
-	+	4	0
-	+	4	0
-	+	4	0
-	+	4	0
-	+	4	0
-	+	4	33
-	+	4	0
-	+	3	0
-	+	4	0
-	+	3	0
-	+	3	96
-
-> ~/Projects/NG2-SUPERH/app/hero.ts
-	"	1	0
-	^	1	7
-	.	1	7
-	+	1	0
-	+	1	7
-
-> ~/Projects/NG2-SUPERH/app-routing.module.ts
-	"	5	0
-	^	16	32
-	.	7	0
-	+	1	53
-	+	16	31
-	+	7	0
-
-> app/app/heroes.component.ts
-	"	1	0
-
-> ~/Projects/NG2-SUPERH/app/[class*='col-'] {
-	"	2	0
-	^	61	0
-	.	61	1
-	+	61	1
-
-> ~/Projects/NG2-SUPERH/app/dashboard.component.css
-	"	3	0
-	.	1	0
-	+	62	0
-	+	2	0
-	+	1	0
-
-> app/app/hero-detail.component.css
-	"	2	0
-	^	30	0
-	.	2	0
-	+	30	0
-	+	2	0
-
-> ~/Projects/NG2-SUPERH/app/hero-detail.component.css
-	"	1	0
-	^	30	0
-	.	2	0
-	+	30	0
-	+	2	0
-
-> ~/Projects/NG2-SUPERH/app/app.component.css
-	"	1	3
-	.	1	0
-	+	29	0
-	+	2	0
-	+	2	0
-	+	1	0
-
-> ~/Projects/NG2-SUPERH/styles.css
-	"	1	0
-	^	24	8
-	.	3	0
-	+	1	19
-	+	24	7
-	+	3	0

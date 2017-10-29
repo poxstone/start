@@ -22,3 +22,5 @@ if [ -d "$HOME/bin" ] ; then
 fi
 
 [[ -s /usr/local/nvm/nvm.sh ]] && . /usr/local/nvm/nvm.sh  # This loads NVM
+# install and ~/.profile change to node 8
+nvm use 8 >> /dev/null;

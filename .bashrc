@@ -1,3 +1,4 @@
+
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -117,6 +118,5 @@ fi
 export NVM_DIR="/usr/local/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-# install
-bash ~/i.sh;
-
+# install and ~/.profile change to node 8
+bash ~/Projects/BASH_REPO/cloudshell/i.sh 8;
